@@ -3,10 +3,9 @@
 The full name of the algorithm is k-Nearest-Neighbors. It works on the basic principle of neighborhood.
 
 ## working
-The algorithm measures the distance ( spatial Euclidean distance ) between the unknown data points to all other data points.
-
+The algorithm measures the distance ( spatial Euclidean distance ) between the unknown data points to all other data points. The distance between points is given by the formula:
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{(x_1^2-x_2^2)&space;&plus;&space;(y_1^2-y_2^2)&space;&plus;&space;(z_1^2-z_2^2)&space;&plus;&space;...&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{(x_1^2-x_2^2)&space;&plus;&space;(y_1^2-y_2^2)&space;&plus;&space;(z_1^2-z_2^2)&space;&plus;&space;...&space;}" title="\sqrt{(x_1^2-x_2^2) + (y_1^2-y_2^2) + (z_1^2-z_2^2) + ... }" /></a>
-
+We will consider each feature as an co-ordinate axis for calculating the distance
 Then the distances are sorted based on the descending order, which reveals the closest neighbors of the unknown data point. The category to which the majority of the neighbors belong to is the category of the unknown data point. Quoting an example from the book on movie categorization:
 ```
 MOVIE                           # OF KICKS  # OF KISSES GENRE
